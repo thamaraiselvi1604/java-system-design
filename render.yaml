@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: simple-java-app
+    env: static
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/*.jar
